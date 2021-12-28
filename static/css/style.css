@@ -1,0 +1,10 @@
+body {
+    overflow-y: overlay !important;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+.active {
+    background-color: aliceblue !important;
+    border-color: aliceblue !important;
+}
