@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'products.apps.ProductsConfig',
     'debug_toolbar',
+    'cart.apps.CartConfig',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +132,6 @@ AUTH_USER_MODEL = 'users.User'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+CART_SESSION_ID = 'cart'
+CART_ITEM_MAX_QUANTITY = 20
