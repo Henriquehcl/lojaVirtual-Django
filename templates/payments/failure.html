@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Erro{% endblock  %}
+{% block content %}
+<div class='container my-3'>
+    <h1 class='font-weight-bold'> Pagamento não relaizado!</h1>
+    <p>
+        Alguma coisa aconteceu e seu pagamento não foi realizado. Tente Novamente.
+        Se o Erro persistir entre em contato com nosso suporte!
+    </p>
+    <a class='btn btn-primary' href='{% url 'pyaments:process' %}'>
+        Tentar Novamente.
+    </a>
+</div>
+{% endblock  %}
